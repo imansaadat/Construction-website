@@ -1,0 +1,60 @@
+@use "../abstracts/" as *;
+.pricing {
+  background-color: $light-bg;
+
+  &__boxes {
+    @include grid(32rem);
+  }
+
+  &__box {
+    border: $border;
+    box-shadow: $box-shadow;
+    text-align: center;
+    padding: 2rem;
+    i {
+      width: 8rem;
+      height: 8rem;
+      line-height: 8rem;
+      background-color: $yellow;
+      border-radius: 50%;
+      font-size: 2.5rem;
+    }
+    &--gold{
+      background-color: $yellow;
+      i{
+        background-color: $light-bg;
+      }
+      .btn{
+        background-color: $white;
+        color: $black;
+        &:hover{
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  &__price {
+    font-size: 4rem;
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  &__list {
+    margin: 1rem 0;
+  }
+
+  &__item {
+    line-height: 2.5;
+    font-size: 1.5rem;
+    color: $light-color;
+  }
+}

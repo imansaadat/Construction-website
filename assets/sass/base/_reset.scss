@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+.py{
+  padding: 5rem 0;
+}

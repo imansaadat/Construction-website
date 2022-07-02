@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+.project {
+  background-color: $black;
+  &__heading {
+    color: $white;
+  }
+  &__cards {
+    @include grid(32rem);
+  }
+
+  &__card {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+      i{
+        background-color: $light-bg;
+        color: $black;
+      }
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    height: 40rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    @include flex(space-between, center);
+    i{
+      width: 8rem;
+      height: 8rem;
+      line-height: 8rem;
+      font-size: 3rem;
+      background-color:$yellow;
+      color: $white;
+      text-align: center;
+    }
+  }
+  &__info{
+    padding: .5rem 1.5rem;
+  }
+}

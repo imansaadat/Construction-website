@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+.contact{
+  background-color: $black;
+ 
+  &__heading{
+    color: $white
+  }
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__map{
+    flex: 1 1 40rem;
+    .map{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__form{
+    flex: 1 1 40rem;
+    background-color: $white;
+    padding: 2rem;
+    .title{
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__input{
+    width: 100%;
+    border-bottom: $border;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    caret-color: $yellow;
+    font-size:1.6rem;
+    color: $light-color;
+    &--message{
+      resize: none;
+    }
+    &:focus{
+      border-color: $yellow;
+    }
+  }
+
+}

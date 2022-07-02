@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+@mixin flex($justify,$item) {
+   display: flex;
+   justify-content:$justify;
+   align-items: $item;
+}
+
+@mixin grid($value) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax($value,1fr));
+  gap: 2rem;
+}
+
+@mixin icon() {
+  margin-left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: $light-bg;
+  color: $black;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+  &:hover {
+    background-color:$black;
+    color: $white;
+  }
+}

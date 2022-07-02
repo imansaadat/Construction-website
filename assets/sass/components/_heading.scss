@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+.heading{
+  font-size: 3rem;
+  color: $black;
+  border-left: 1rem solid $yellow;
+  padding-left: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}

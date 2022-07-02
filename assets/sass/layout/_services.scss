@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+.services{
+  background-color: $light-bg;
+ &__cards{
+   @include grid(26rem);
+ }
+ 
+ &__card{
+  text-align: center;
+  box-shadow: $box-shadow;
+  background-color: $white;
+  border: $border;
+  padding: 3rem;
+  &:hover{
+    img{
+      transform: translateY(-1rem);
+    }
+  }
+}
+&__img{
+  width: 6rem;
+  height: 6rem;
+  transition: .3s;
+ }
+ &__title{
+  margin: 1rem 0;
+ }
+}

@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+.blogs{
+  background-color: $light-bg;
+  &__card{
+    text-align: center;
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__content{
+    background-color: $white;
+    box-shadow: $box-shadow;
+    padding: 4rem 2rem 2rem;
+  }
+
+&__img{
+  width: 90%;
+  height: 28rem;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: -2.5rem;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s linear;
+  }
+}
+
+&__title{
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+&__text{
+  padding: 1.5rem 0;
+}
+
+}

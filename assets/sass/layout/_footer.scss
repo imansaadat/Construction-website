@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.footer{
+  text-align: center;
+  .btn{
+    margin: .5rem;
+  }
+
+  &__copy-right{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $black;
+    margin-top: 1.5rem;
+    span{
+      color: $yellow;
+    }
+  }
+}

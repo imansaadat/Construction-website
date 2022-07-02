@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.btn{
+  padding: 1.2rem 3rem;
+  color: $white;
+  text-transform: capitalize;
+  background-color: $black;
+  font-size: 1.6rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: .3s ease-in;
+  &:hover{
+    color: $black;
+    background-color: $yellow;
+  }
+}

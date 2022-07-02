@@ -1,0 +1,255 @@
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.header {
+  background-color: $white;
+  box-shadow: $box-shadow;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 10;
+  &__content {
+    @include flex(space-between, center);
+  }
+  .logo {
+    font-size: 3rem;
+    span {
+      color: $yellow;
+    }
+  }
+  .nav {
+    &__list {
+      display: flex;
+    }
+    &__link {
+      font-size: 1.8rem;
+      margin: 0 1.6rem;
+      text-transform: capitalize;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    .icon {
+      @include icon();
+    }
+    &__menu {
+      display: none;
+    }
+  }
+  .login,
+  .search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-animation: overlay 0.3s linear;
+    animation: overlay 0.3s linear;
+    display: none;
+    &__close{
+      position: absolute;
+      top: .5rem;
+      right: 2rem;
+      font-size: 4rem;
+      cursor: pointer;
+      &:hover{
+        color: $yellow;
+      }
+    }
+    &__form {
+      box-shadow: $box-shadow;
+      background-color: $white;
+      text-align: center;
+      padding: 1.5rem;
+      width: 40rem;
+      -webkit-animation: fadeIn 0.4s linear;
+      animation: fadeIn 0.4s linear;
+    }
+    &.show {
+      @include flex(center, center);
+    }
+    &__title {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+    &__block {
+      margin: 2rem 0;
+    }
+    &__input {
+      padding: 1.4rem;
+      font-size: 1.5rem;
+      width: 100%;
+      color: $light-color;
+      background-color: $light-bg;
+    }
+    &__remember {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      color: $light-color;
+      .remember__input {
+        appearance: none;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: $border;
+        &:checked {
+          background-color: $yellow;
+          border-color: transparent;
+        }
+      }
+      a {
+        margin-left: auto;
+        color: $light-color;
+        &:hover {
+          text-decoration: underline;
+          color: $yellow;
+        }
+      }
+      label {
+        margin-left: 0.4rem;
+        cursor: pointer;
+      }
+    }
+    .btn {
+      margin: 1rem 0;
+      width: 100%;
+      letter-spacing: 0.1rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+      color: $light-color;
+      padding-top: 1rem;
+      a {
+        color: $yellow;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .search {
+    &__form {
+      padding: 1rem 1.6rem;
+      width: 60rem;
+      @include flex(space-between, center);
+      gap: 1rem;
+    }
+    &__input {
+      background-color: $light-bg;
+      padding: 1.4rem;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    &__icon {
+      font-size: 2.4rem;
+      cursor: pointer;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+  .info {
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    width: 30rem;
+    height: 100%;
+    z-index: 10;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    @include flex(center, center);
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: auto;
+    &.show {
+      right: 0;
+    }
+    &__close {
+      font-size: 3.4rem;
+      position: absolute;
+      right: 2rem;
+      top: 0.2rem;
+      cursor: pointer;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    &__card {
+      text-align: center;
+      margin: 2rem 0;
+      i{
+        pointer-events: none;
+      }
+    }
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $black;
+    }
+    &__text {
+      font-size: 1.4rem;
+      color: $light-color;
+      line-height: 2;
+    }
+    &__icon {
+      margin-bottom: 1rem;
+      @include icon();
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    .nav {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      background-color: $white;
+      border-top: $border;
+      border-bottom: $border;
+      padding: 1rem 0;
+      -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      transition: 0.3s ease-in-out;
+
+      &.active {
+        -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+      }
+      &__list {
+        flex-direction: column;
+        text-align: center;
+      }
+      &__link {
+        margin: 1rem;
+        display: block;
+      }
+    }
+
+    .icons {
+      &__menu {
+        display: block;
+      }
+    }
+    .login,
+    .search {
+      &__form {
+        width: 85%;
+      }
+    }
+  }
+}

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Light Gallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/sass/main.css" />
+    <title>Construction</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">We<span>Build</span></a>
+        </div>
+        <!-- Navbar -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blogs" class="nav__link">blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Icons -->
+        <div class="icons">
+          <div class="icon icons__menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="icon icons__info">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <div class="icon icons__search">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon icons__login">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <!-- Login Form -->
+        <div class="login">
+          <div class="login__close close__icon">
+            <i class="fas fa-times"></i>
+          </div>
+          <form action="#" class="login__form">
+            <h3 class="login__title">login form</h3>
+            <div class="login__block">
+              <input
+                type="email"
+                placeholder="enter your email"
+                class="login__input"
+              />
+            </div>
+            <div class="login__block">
+              <input
+                type="password"
+                placeholder="enter your password"
+                class="login__input"
+              />
+            </div>
+            <div class="login__remember">
+              <input type="checkbox" id="rememberMe" class="remember__input" />
+              <label for="rememberMe">remember me</label>
+              <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn" />
+            <p class="login__text">
+              don't have an account <a href="#">create one!</a>
+            </p>
+          </form>
+        </div>
+        <!-- Search Form -->
+        <div class="search">
+          <div class="search__close close__icon">
+            <i class="fas fa-times"></i>
+          </div>
+          <form action="#" class="search__form">
+            <input
+              type="search"
+              id="search"
+              class="search__input"
+              placeholder="search here..."
+            />
+            <label for="search" class="search__icon">
+              <i class="fas fa-search"></i>
+            </label>
+          </form>
+        </div>
+        <!-- Info -->
+        <div class="info">
+          <div class="info__close close__icon">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="info__card">
+            <i class="info__icon fas fa-phone"></i>
+            <h3 class="info__title">phone number</h3>
+            <p class="info__text">+123-456-7890</p>
+            <p class="info__text">+111-222-3333</p>
+          </div>
+          <div class="info__card">
+            <i class="info__icon fas fa-envelope"></i>
+            <h3 class="info__title">email address</h3>
+            <p class="info__text">shaikhanas@gmail.com</p>
+            <p class="info__text">anasbhai@gmail.com</p>
+          </div>
+          <div class="info__card">
+            <i class="info__icon fas fa-map-marker-alt"></i>
+            <h3 class="info__title">office address</h3>
+            <p class="info__text">mumbai, india - 400104</p>
+          </div>
+          <div class="media">
+            <a href="#"><i class="info__icon fab fa-facebook-f"></i></a>
+            <a href="#"><i class="info__icon fab fa-twitter"></i></a>
+            <a href="#"><i class="info__icon fab fa-instagram"></i></a>
+            <a href="#"><i class="info__icon fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main page -->
+    <main>
+      <!-- Home -->
+      <section id="home" class="home">
+        <div class="swiper home_slider">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide slider"
+              style="background-image: url(assets/images/home-slide-1.jpg)"
+            >
+              <div class="home__slide container">
+                <div class="home__content">
+                  <h1 class="home__title">we provide best service</h1>
+                  <p class="home__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Saepe quaerat quia amet itaque iure eum quasi neque tempore
+                    cupiditate repudiandae reprehenderit quis
+                  </p>
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide slider"
+              style="background-image: url(assets/images/home-slide-2.jpg)"
+            >
+              <div class="home__slide container">
+                <div class="home__content">
+                  <h1 class="home__title">from concept to creation</h1>
+                  <p class="home__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Saepe quaerat quia amet itaque iure eum quasi neque tempore
+                    cupiditate repudiandae reprehenderit quis.
+                  </p>
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide slider"
+              style="background-image: url(assets/images/home-slide-3.jpg)"
+            >
+              <div class="home__slide container">
+                <div class="home__content">
+                  <h1 class="home__title">making dream come to life</h1>
+                  <p class="home__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Saepe quaerat quia amet itaque iure eum quasi neque tempore
+                    cupiditate repudiandae reprehenderit quis.
+                  </p>
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- About Us -->
+      <section id="about" class="about py counter">
+        <div class="container">
+          <h2 class="heading">about us</h2>
+          <div class="about__row">
+            <div class="about__video">
+              <video autoplay muted loop class="video">
+                <source src="assets/images/about-vid.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="about__content">
+              <h2 class="about__title">
+                We Will Provide You The Best Work Which You Dreamt For!
+              </h2>
+              <p class="about__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et
+                vero mollitia nemo corporis consequatur aspernatur distinctio
+                dignissimos velit nam.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="about__boxes">
+            <div class="about__box nums">
+              <h3 class="counter num" data-goal="12">0</h3>
+              <p>years of experience</p>
+            </div>
+            <div class="about__box nums">
+              <h3 class="counter num" data-goal="450">0</h3>
+              <p>project completed</p>
+            </div>
+            <div class="about__box nums">
+              <h3 class="counter num" data-goal="300">0</h3>
+              <p>satiesfied clients</p>
+            </div>
+            <div class="about__box nums">
+              <h3 class="counter num" data-goal="180">0</h3>
+              <p>active workers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section id="services" class="services py">
+        <div class="container">
+          <h2 class="heading">our services</h2>
+          <div class="services__cards">
+            <div class="services__card">
+              <img
+                src="assets/images/service-1.png"
+                class="services__img"
+                alt="building construction"
+              />
+              <h3 class="services__title">building construction</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-2.png"
+                class="services__img"
+                alt="house renovation"
+              />
+              <h3 class="services__title">house renovation</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-3.png"
+                class="services__img"
+                alt="architechture design"
+              />
+              <h3 class="services__title">architechture design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-4.png"
+                class="services__img"
+                alt="material supply"
+              />
+              <h3 class="services__title">material supply</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-5.png"
+                class="services__img"
+                alt="construction consultant"
+              />
+              <h3 class="services__title">construction consultant</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-6.png"
+                class="services__img"
+                alt="interior design"
+              />
+              <h3 class="services__title">interior design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-7.png"
+                class="services__img"
+                alt="building maintenance"
+              />
+              <h3 class="services__title">building maintenance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+            <div class="services__card">
+              <img
+                src="assets/images/service-8.png"
+                class="services__img"
+                alt="building renovation"
+              />
+              <h3 class="services__title">building renovation</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Projects -->
+      <section id="projects" class="project py">
+        <div class="container">
+          <h2 class="heading project__heading">our projects</h2>
+          <div class="project__cards">
+            <a href="assets/images/project-1.jpg" class="project__card">
+              <div class="project__img">
+                <img src="assets/images/project-1.jpg" alt="" />
+              </div>
+              <div class="project__content">
+                <div class="project__info">
+                  <h3>dream home</h3>
+                  <p>construction, design</p>
+                </div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="assets/images/project-2.jpg" class="project__card">
+              <div class="project__img">
+                <img src="assets/images/project-2.jpg" alt="" />
+              </div>
+              <div class="project__content">
+                <div class="project__info">
+                  <h3>dream home</h3>
+                  <p>construction, design</p>
+                </div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="assets/images/project-3.jpg" class="project__card">
+              <div class="project__img">
+                <img src="assets/images/project-3.jpg" alt="" />
+              </div>
+              <div class="project__content">
+                <div class="project__info">
+                  <h3>dream home</h3>
+                  <p>construction, design</p>
+                </div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="assets/images/project-4.jpg" class="project__card">
+              <div class="project__img">
+                <img src="assets/images/project-4.jpg" alt="" />
+              </div>
+              <div class="project__content">
+                <div class="project__info">
+                  <h3>dream home</h3>
+                  <p>construction, design</p>
+                </div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="assets/images/project-5.jpg" class="project__card">
+              <div class="project__img">
+                <img src="assets/images/project-5.jpg" alt="" />
+              </div>
+              <div class="project__content">
+                <div class="project__info">
+                  <h3>dream home</h3>
+                  <p>construction, design</p>
+                </div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="assets/images/project-6.jpg" class="project__card">
+              <div class="project__img">
+                <img src="assets/images/project-6.jpg" alt="" />
+              </div>
+              <div class="project__content">
+                <div class="project__info">
+                  <h3>dream home</h3>
+                  <p>construction, design</p>
+                </div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Reviews -->
+      <section id="reviews" class="reviews py">
+        <div class="container">
+          <h2 class="heading">clients reviews</h2>
+          <div class="swiper reviews_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <blockquote>
+                  <div class="reviews__user">
+                    <img
+                      src="assets/images/pic-1.png"
+                      class="reviews__img"
+                      alt=""
+                    />
+                    <div class="reviews__info">
+                      <h3>john deo</h3>
+                      <div class="reviews__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus incidunt et ratione amet odio expedita id ut modi
+                    eveniet non molestiae nulla minus unde enim, cum aliquam
+                    libero vel at!
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <div class="reviews__user">
+                    <img
+                      src="assets/images/pic-2.png"
+                      class="reviews__img"
+                      alt=""
+                    />
+                    <div class="reviews__info">
+                      <h3>john deo</h3>
+                      <div class="reviews__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus incidunt et ratione amet odio expedita id ut modi
+                    eveniet non molestiae nulla minus unde enim, cum aliquam
+                    libero vel at!
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <div class="reviews__user">
+                    <img
+                      src="assets/images/pic-3.png"
+                      class="reviews__img"
+                      alt=""
+                    />
+                    <div class="reviews__info">
+                      <h3>john deo</h3>
+                      <div class="reviews__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus incidunt et ratione amet odio expedita id ut modi
+                    eveniet non molestiae nulla minus unde enim, cum aliquam
+                    libero vel at!
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <div class="reviews__user">
+                    <img
+                      src="assets/images/pic-4.png"
+                      class="reviews__img"
+                      alt=""
+                    />
+                    <div class="reviews__info">
+                      <h3>john deo</h3>
+                      <div class="reviews__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus incidunt et ratione amet odio expedita id ut modi
+                    eveniet non molestiae nulla minus unde enim, cum aliquam
+                    libero vel at!
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <div class="reviews__user">
+                    <img
+                      src="assets/images/pic-5.png"
+                      class="reviews__img"
+                      alt=""
+                    />
+                    <div class="reviews__info">
+                      <h3>john deo</h3>
+                      <div class="reviews__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus incidunt et ratione amet odio expedita id ut modi
+                    eveniet non molestiae nulla minus unde enim, cum aliquam
+                    libero vel at!
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <div class="reviews__user">
+                    <img
+                      src="assets/images/pic-6.png"
+                      class="reviews__img"
+                      alt=""
+                    />
+                    <div class="reviews__info">
+                      <h3>john deo</h3>
+                      <div class="reviews__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus incidunt et ratione amet odio expedita id ut modi
+                    eveniet non molestiae nulla minus unde enim, cum aliquam
+                    libero vel at!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Pricing -->
+      <section id="pricing" class="pricing py">
+        <div class="container">
+          <h2 class="heading">our pricing</h2>
+          <div class="pricing__boxes">
+            <div class="pricing__box">
+              <i class="fas fa-home"></i>
+              <h3 class="pricing__title">basic plan</h3>
+              <div class="pricing__price">
+                <span>$</span>250<span>/mo</span>
+              </div>
+              <ul class="pricing__list">
+                <li class="pricing__item">interior design</li>
+                <li class="pricing__item">refurbishment</li>
+                <li class="pricing__item">material supply</li>
+                <li class="pricing__item">maintenance</li>
+                <li class="pricing__item">24/7 support</li>
+              </ul>
+              <a href="#" class="btn">choose plan</a>
+            </div>
+            <div class="pricing__box pricing__box--gold">
+              <i class="fas fa-building"></i>
+              <h3 class="pricing__title">Premium Plan</h3>
+              <div class="pricing__price">
+                <span>$</span>650<span>/mo</span>
+              </div>
+              <ul class="pricing__list">
+                <li class="pricing__item">interior design</li>
+                <li class="pricing__item">refurbishment</li>
+                <li class="pricing__item">material supply</li>
+                <li class="pricing__item">maintenance</li>
+                <li class="pricing__item">24/7 support</li>
+              </ul>
+              <a href="#" class="btn">choose plan</a>
+            </div>
+            <div class="pricing__box">
+              <i class="fas fa-city"></i>
+              <h3 class="pricing__title">Ultimate Plan</h3>
+              <div class="pricing__price">
+                <span>$</span>1250<span>/mo</span>
+              </div>
+              <ul class="pricing__list">
+                <li class="pricing__item">interior design</li>
+                <li class="pricing__item">refurbishment</li>
+                <li class="pricing__item">material supply</li>
+                <li class="pricing__item">maintenance</li>
+                <li class="pricing__item">24/7 support</li>
+              </ul>
+              <a href="#" class="btn">choose plan</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Us -->
+      <section id="contact" class="contact py">
+        <div class="container">
+          <h2 class="heading contact__heading">contact us</h2>
+          <div class="contact__row">
+            <div class="contact__map">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25905.073677568857!2d51.4939955!3d35.7475059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1656708278873!5m2!1sen!2s"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="contact__form">
+              <form action="#">
+                <h3 class="title">get in touch</h3>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="contact__input"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="contact__input"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    placeholder="Phone"
+                    class="contact__input"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    class="contact__input contact__input--message"
+                    id=""
+                    cols="20"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <input type="submit" value="send message" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Blogs -->
+      <section id="blogs" class="blogs py">
+        <div class="container">
+          <h2 class="heading">our blogs</h2>
+          <div class="swiper blogs__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blogs__card">
+                  <div class="blogs__img">
+                    <img src="assets/images/blog-1.jpg" alt="" />
+                  </div>
+                  <div class="blogs__content">
+                    <h3 class="blogs__title">blog title goes here</h3>
+                    <p class="blogs__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda, nobis!
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blogs__card">
+                  <div class="blogs__img">
+                    <img src="assets/images/blog-2.jpg" alt="" />
+                  </div>
+                  <div class="blogs__content">
+                    <h3 class="blogs__title">blog title goes here</h3>
+                    <p class="blogs__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda, nobis!
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blogs__card">
+                  <div class="blogs__img">
+                    <img src="assets/images/blog-3.jpg" alt="" />
+                  </div>
+                  <div class="blogs__content">
+                    <h3 class="blogs__title">blog title goes here</h3>
+                    <p class="blogs__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda, nobis!
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blogs__card">
+                  <div class="blogs__img">
+                    <img src="assets/images/blog-4.jpg" alt="" />
+                  </div>
+                  <div class="blogs__content">
+                    <h3 class="blogs__title">blog title goes here</h3>
+                    <p class="blogs__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda, nobis!
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blogs__card">
+                  <div class="blogs__img">
+                    <img src="assets/images/blog-5.jpg" alt="" />
+                  </div>
+                  <div class="blogs__content">
+                    <h3 class="blogs__title">blog title goes here</h3>
+                    <p class="blogs__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda, nobis!
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blogs__card">
+                  <div class="blogs__img">
+                    <img src="assets/images/blog-6.jpg" alt="" />
+                  </div>
+                  <div class="blogs__content">
+                    <h3 class="blogs__title">blog title goes here</h3>
+                    <p class="blogs__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda, nobis!
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Logo -->
+      <section class="logo py">
+        <div class="container">
+          <div class="swiper logo__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/client-logo-1.png" class="logo__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/client-logo-2.png" class="logo__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/client-logo-3.png" class="logo__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/client-logo-4.png" class="logo__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/client-logo-5.png" class="logo__img" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/client-logo-6.png" class="logo__img" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer py">
+         <div class="container">
+            <div class="footer__links">
+              <a class="btn" href="#home">home</a>
+              <a class="btn" href="#about">about</a>
+              <a class="btn" href="#services">services</a>
+              <a class="btn" href="#projects">projects</a>
+              <a class="btn" href="#pricing">pricing</a>
+              <a class="btn" href="#contact">contact</a>
+              <a class="btn" href="#blogs">blogs</a>
+            </div>
+            <div class="footer__copy-right">
+              designed by <span>mr. web designer</span> and
+              developed by <span>Eslam Saadat (Iman)</span>
+            </div>
+         </div>
+    </footer>
+    <!--swiper  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Light Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/index.js"></script>
+    <script>
+      lightGallery(document.querySelector(".project__cards"));
+    </script>
+  </body>
+</html>
