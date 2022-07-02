@@ -1,6 +1,7 @@
 
 const menuBtn = document.querySelector('.icons__menu')
 const nav = document.querySelector('.nav')
+const navLink = document.querySelectorAll('.nav__link')
 const loginBtn = document.querySelector('.icons__login')
 const login = document.querySelector('.login')
 const searchBtn = document.querySelector('.icons__search')
@@ -9,9 +10,17 @@ const info = document.querySelector('.info')
 const infoBtn = document.querySelector('.icons__info')
 const closeIcon = document.querySelectorAll('.close__icon')
 
+
 menuBtn.addEventListener('click', () => {
   nav.classList.toggle('active')
 })
+
+navLink.forEach(link=>{
+  link.addEventListener('click',()=>{
+    nav.classList.remove('active')
+  })
+})
+
 
 loginBtn.addEventListener('click', () => {
   login.classList.toggle('show')
