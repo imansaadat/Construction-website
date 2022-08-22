@@ -68,22 +68,10 @@ p {
   background-color: #f5bf23;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
     transform: scale(0);
-  }
-}
-@-webkit-keyframes overlay {
-  0% {
-    opacity: 0;
   }
 }
 @keyframes overlay {
@@ -109,7 +97,6 @@ p {
 .header {
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -169,8 +156,7 @@ p {
   height: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   -webkit-animation: overlay 0.3s linear;
   animation: overlay 0.3s linear;
   display: none;
@@ -230,9 +216,7 @@ p {
 }
 .header .login__remember .remember__input,
 .header .search__remember .remember__input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 1.6rem;
   height: 1.6rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
@@ -284,12 +268,6 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-}
-.header .search__input {
-  background-color: #eee;
-  padding: 1.4rem;
-  width: 100%;
-  font-size: 1.5rem;
 }
 .header .search__icon {
   font-size: 2.4rem;
@@ -365,7 +343,6 @@ p {
   html {
     font-size: 55%;
   }
-
   .header .nav {
     position: absolute;
     top: 100%;
@@ -602,8 +579,7 @@ p {
 .project__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 .project__content {
@@ -736,8 +712,7 @@ p {
 .blogs__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s linear;
 }
 .blogs__title {
@@ -754,9 +729,7 @@ p {
 .logo__img {
   height: 8.5rem;
   -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .footer {
